@@ -9,9 +9,9 @@ const Table_CBR = () => {
       .then((request) => request.json())
       .then((res) => setСurrencies(Object.values(res.Valute)));
   };
-  const GetLine = (currency, index) => {
+  const GetLine = (currency) => {
     return (
-      <tr key={index}>
+      <tr key={currency.CharCode}>
         <td>{currency.CharCode}</td>
         <td>{currency.Name}</td>
         <td>{currency.Previous.toFixed(2)}</td>
