@@ -24,7 +24,7 @@ const Table_CBR = () => {
     FetchRequest();
   }, []);
 
-  const contentTable = currencies.map((currency, index) => GetLine(currency, index));
+  const contentTable = currencies.map((currency) => GetLine(currency));
 
   return (
     <table className={style.mytable}>
